@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+};
+
+$maxWidth: 1400px;
+$midWidth: 1200px;
+$minWidth: 1100px;
+$darkBlue: #212832;
+
+
+.flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topNav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+   
+    width: 100%;
+    .center{
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px 20px;
+        .navContainer{
+            display: flex;
+            column-gap: 40px;
+            align-items: center;
+            .navBar{
+                display: flex;
+                column-gap: 50px;
+                list-style-type: none;
+                align-items: center;
+                color: $darkBlue; 
+                a{
+                    text-decoration: none;
+                    color: $darkBlue;
+                } 
+                li:last-child{
+                    margin-right: 70px;
+                }
+            }
+            button{
+                padding:5px 15px;
+                background-color: transparent;
+                border-radius: 5px;
+                color: $darkBlue;
+                cursor: pointer;
+                }
+            .login{
+                border: 0px;
+            }
+            .singUp{
+                border: 1px solid $darkBlue;
+            }
+        }
+        .languageSelect{
+            background-color: transparent;
+            border: 0px;
+            color: $darkBlue;
+            cursor: pointer;
+        }
+    }
+    
+}
+
+.heroContent{
+    width: 100%;
+    .heroCenterContainer{
+        width: 70%;
+        padding: 15px 60px;
+       .textContainer{
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 20px;
+        width: 50%;
+        
+        span{
+            color: #DF6951;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        h1{
+            font-family: "Volkhov", serif;
+            font-size: 60px;
+            font-weight: 900;
+            color: $darkBlue;
+        }
+        p{
+            color:#5E6282;
+            font-size: 16px;
+        }
+        .btnContainer{
+            column-gap: 25px;
+            .findOutMore{
+                padding: 12px 25px;
+                background-color: #F1A501;
+                color: white;
+                border-radius: 5px;
+                border: 0px;
+            }
+            .play{
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                background-color: #DF6951;
+                border: 0px;
+                color: white;
+                margin-left: 20px;
+            }
+            span{
+                color:#5E6282;
+            font-size: 16px;
+            font-weight: 400;
+            }
+        }
+       }
+    }
+}

@@ -3,9 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700;900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <section class="topNav">
+        <div class="center">
+          <div class="logo"><img src="./images/logo.svg" alt="Logo" /></div>
+          <div class="navContainer">
+            <nav class="headerNav">
+              <ul class="navBar">
+                <li><a href="http://">Desitnations</a></li>
+                <li><a href="http://">Hotels</a></li>
+                <li><a href="http://">Flights</a></li>
+                <li><a href="http://">Bookings</a></li>
+              </ul>
+            </nav>
+            <button class="login">Login</button>
+            <button class="signUp">Sign up</button>
+            <!-- <label for="language-select"></label> -->
+            <select class="languageSelect" id="languageSelect">
+              <option value="en">EN</option>
+              <option value="es">ES</option>
+              <option value="fr">FR</option>
+              <option value="de">DE</option>
+            </select>
+          </div>
+        </div>
+      </section>
+      <section class="heroContent flexCenter">
+        <div class="heroCenterContainer flexCenter">
+          <div class="textContainer flexCenter">
+            <span>BEST DESTINATIONS AROUND THE WORLD</span>
+            <h1>Travel, enjoy and live a new and full life</h1>
+            <p>
+              Built Wicket longer admire do barton vanity itself do in it.
+              Preferred to sportsmen it engrossed listening. Park gate sell they
+              west hard for the.
+            </p>
+            <div class="btnContainer flexCenter">
+              <button class="findOutMore">Find out more</button>
+              <button class="play">&#9658;</button>
+              <span>Play Demo</span>
+            </div>
+          </div>
+          <div class="imgContainer">
+            <img src="./images/Traveller 1.svg" alt="Traveller" />
+          </div>
+        </div>
+      </section>
+    </header>
+  </body>
 </html>
