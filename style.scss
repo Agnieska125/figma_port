@@ -19,11 +19,12 @@ $darkBlue: #212832;
     margin: 0 auto;
     height: 80px;
     padding: 40px 10px 10px 10px;
-    background-color: greenyellow;
+    position: relative;
     .navContainer{
         display: flex;
         column-gap: 35px;
         align-items: center;
+        
         .navBar{
             display: flex;
             column-gap: 60px;
@@ -76,23 +77,34 @@ $darkBlue: #212832;
             }
         }
     }
-
+.backgroundImg{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top:0 
+}
 }
 
 .heroContent{
-    width: $midWidth;
+    width: $maxWidth;
     display: flex;
     align-items: center;
     justify-content:center;
     margin: 0px auto;
-    background-color: aqua;
-    padding: 20px 30px;
+    padding: 20px 80px 20px 80px;
+    position: relative;
     .textContainer{
-        width: 49%;
+        width: 40%;
         display: flex;
         row-gap: 10px;
         align-items: start;
         flex-direction: column;
+        .textDecore{
+            position: absolute;
+            z-index: -1;
+            top:225px;
+            left: 340px;
+        }
         span{
             color: #DF6951;
             font-size: 20px;
@@ -109,14 +121,95 @@ $darkBlue: #212832;
             
         }
     }
+
+    .btnContainer{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        column-gap: 20px;
+        .findOutMore{
+            padding: 10px 25px;
+            border-radius: 5px;
+            background-color: #F1A501;
+            color: white;
+            border: 2px solid #F1A501;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        .findOutMore:hover{
+            background-color: white;
+            color: #F1A501;
+        }
+        .play{
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: #DF6951;
+            border: 2px solid #DF6951;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        .play:hover{
+            background-color: white;
+            color: #DF6951;
+        }
+        span{
+            font-size: 16px;
+            color: #5E6282 ;
+            font-weight: 500;
+        }
+    }
+.firstPlane{
+    position: absolute;
+    right: 590px;
+    top: 50px;
+}
     .imgContainer{
-        width: 700px;
-       
-        padding-right: 10px;
+        width: 50%;
+        overflow: hidden;
+        
         img{
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
+  .secondPlane{
+    position: absolute;
+    top:120px;
+    right: 110px;
+    z-index: -1;
+  }
 }
+
+.category{
+    width: $maxWidth;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .categoryTextContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sericesCardContainer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        .card{
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // justify-content: center;
+            text-align: center;
+
+        }
+    }
+}
+
