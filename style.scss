@@ -114,6 +114,7 @@ $darkBlue: #212832;
             font-family: "Volkhov", serif ;
             font-size: 65px;
             line-height: 69px;
+            color: #181E4B;
         }
         p{
             font-size: 16px;
@@ -185,29 +186,46 @@ $darkBlue: #212832;
 }
 
 .category{
-    width: $maxWidth;
+    width: $minWidth;
     margin: 50px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: baseline;
     .categoryTextContainer{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        row-gap: 10px;
+        span{
+            color: #5E6282;
+            font-weight: 600;
+        }
+        h2{
+            font-family: "Volkhov", serif;
+            font-size: 42px;
+            color: #14183E;
+        }
     }
     .sericesCardContainer{
         width: 100%;
         display: flex;
-        justify-content: center;
-        align-items: baseline;
+        justify-content:  center;
+        align-items: center;
+        margin-top: 80px;
+        column-gap: 60px;
         .card{
             width: 20%;
+            height: 350px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            // justify-content: center;
+            justify-content: space-around;
             text-align: center;
+            border: 1px solid black;
+            padding: 10px 30px;
+            row-gap: 10px;
 
         }
     }
