@@ -186,7 +186,8 @@ $darkBlue: #212832;
 }
 
 .category{
-    width: $minWidth;
+    position: relative;
+    width: $midWidth;
     margin: 50px auto;
     display: flex;
     flex-direction: column;
@@ -207,6 +208,11 @@ $darkBlue: #212832;
             font-size: 42px;
             color: #14183E;
         }
+        
+    }
+    .bgimage{
+        position: absolute;
+        right: -60px;
     }
     .sericesCardContainer{
         width: 100%;
@@ -214,20 +220,79 @@ $darkBlue: #212832;
         justify-content:  center;
         align-items: center;
         margin-top: 80px;
-        column-gap: 60px;
+        column-gap: 30px;
+        flex-wrap: wrap;
         .card{
-            width: 20%;
+            width: 22%;
             height: 350px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-around;
+            justify-content: space-evenly;
             text-align: center;
-            border: 1px solid black;
-            padding: 10px 30px;
-            row-gap: 10px;
-
+            padding: 10px 10px;
+            border-radius: 35px;
+            box-shadow: 5px 5px 10px 2px rgba(221, 221, 221, 0.315);
+            position: relative;
+            background-color: #ffffff;
+            img{
+                height: 100px;
+                width: auto;
+            }
+            h3{
+                color: #1E1D4C;
+                font-weight: 500;
+            }
+            p{
+                color: #5E6282;
+                font-size: 16px;
+                line-height: 26px;
+                padding: 0 32px;
+            }
+      
+        }
+       
+        img.redBg{
+            position: absolute;
+            z-index: -1; 
+            bottom: -30px; 
+            left: -30px;  
         }
     }
-}
+    }
+
+    .topSelling{
+        margin-top: 150px;
+        background-color: #DF6951;
+        width: $midWidth;
+        margin: 160px auto 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        span{
+            padding-top: 10px;
+            color: #5E6282;
+            font-weight: 600
+        }
+
+        h2{
+            font-family: "Volkhov", serif;
+            font-size: 42px;
+            color: #14183E;
+        }
+
+        .destinationImgConatiner{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .cityCard{
+                display: flex ;
+                flex-direction: column;
+               align-items: center;
+               justify-content: space-between;
+            }
+        }
+
+    }
 
